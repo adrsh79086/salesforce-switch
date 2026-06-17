@@ -5,7 +5,7 @@ const CLIENT_ID = "3MVG97L7PWbPq6UyfT9M4sqf7hrjlcsoGpd33XH8fWxj2snNIar3tVw1986X8
 const login = () => {
 
 const url =
-`https://login.salesforce.com/services/oauth2/authorize?response_type=token&client_id=${CLIENT_ID}&redirect_uri=http://localhost:3000/callback`;
+`https://login.salesforce.com/services/oauth2/authorize?response_type=token&client_id=${CLIENT_ID}&redirect_uri=https://salesforce-switch-seven.vercel.app/callback`;
 
 window.location.href = url;
 };
