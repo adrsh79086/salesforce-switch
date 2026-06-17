@@ -30,7 +30,7 @@ try {
   const instance = localStorage.getItem("instance");
 
   const response = await axios.post(
-    "http://https://server-2u2s.onrender.com/validation-rules",
+    "http://server-2u2s.onrender.com/validation-rules",
     {
       token,
       instance
@@ -60,7 +60,7 @@ try {
   const instance = localStorage.getItem("instance");
 
   await axios.post(
-    "http://https://server-2u2s.onrender.com/toggle-rule",
+    "http://server-2u2s.onrender.com/toggle-rule",
     {
       token,
       instance,
@@ -87,7 +87,7 @@ const enableAllRules = async () => {
 try {
 
   await axios.post(
-    "http://https://server-2u2s.onrender.com/set-all-rules",
+    "http://server-2u2s.onrender.com/set-all-rules",
     {
       token: localStorage.getItem("token"),
       instance: localStorage.getItem("instance"),
@@ -114,7 +114,7 @@ const disableAllRules = async () => {
 try {
 
   await axios.post(
-    "http://https://server-2u2s.onrender.com/set-all-rules",
+    "http://server-2u2s.onrender.com/set-all-rules",
     {
       token: localStorage.getItem("token"),
       instance: localStorage.getItem("instance"),
